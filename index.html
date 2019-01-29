@@ -21,35 +21,50 @@
   <!-- chart.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js" integrity="sha256-oSgtFCCmHWRPQ/JmR4OoZ3Xke1Pw4v50uh6pLcu+fIc=" crossorigin="anonymous"></script>
 
+  <!-- link del css -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!--Link a Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
+
   <title> Air Quality | Italy </title>
 
   <meta charset="utf-8">
 
-
 </head>
 
 <body>
+  
     <!--Navbar-->
     <!-- Image and text -->
     <nav class="navbar navbar-dark bg-primary">
       <a class="navbar-brand" href="#">
+        <img src="img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Air Quality | Italy
       </a>
     </nav>
+
+    <!--Addi tutto quello che vuoi mettere prima del grafico-->
+
+    <!--Cover nuvole-->
     
     <div class="container-immagine"> 
+      <img class="immagine" src="img/nuvola1.png">
       <div class="centered">Scopri la qualità dell'aria nella tua città</div>
     </div> 
     
    <div class="container">
     
     <div class="selezione-citta">
-      <a class="testo">Seleziona la città</a> 
+      <a class="testo">Seleziona la città</a>
+      <!--Dorpdown Menù-->   
       <select id="selezione" class="custom-select" style="width:200px">
           <option>Città</option>        
       </select>
     </div>
 
+    <!--Grafico-->
     <div class="grafico">
       <div id="chartContainer">
           <canvas id="italyAirQualityChart"></canvas>
@@ -59,9 +74,8 @@
   </div>
 
   <footer>
-
+    <img class="immagine" src="img/nuvola-contrario.png">
   </footer>
-  
      <!-- script del js -->
     <script src="js/main.js"></script>
 
